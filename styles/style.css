@@ -1,0 +1,142 @@
+.hidden {
+  display: none;
+}
+
+h1{
+	color:red;
+	text-align:center;
+}
+a:link {
+	color: black;
+}
+a:visited {
+	color: black;
+}
+
+/* ТАБЛИЦЫ: внешние границы таблицы серого цвета толщиной 1px */
+table {
+	border: 1px solid grey;
+}
+/* границы ячеек первого ряда таблицы */
+th {
+	border: 1px solid grey;
+}
+/* границы ячеек тела таблицы */
+td {
+	border: 1px solid grey;
+}
+/* сделает ширину таблицы равной ширине блока контейнера, в котором она находится */
+table {
+	width: 100%;
+}
+/* задаст фиксированную ширину для таблицы */
+table {
+	width: 600px;
+}
+
+/* .nav {
+	position: relative;
+	min-height: 40px;
+}	
+.nav ul {
+	width: 180px;
+	padding: 5px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+ */
+ .nav ul{
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+ .nav ul li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+	background: #ffffff;
+	//border-color: #ffffff;
+	//color: relative;
+    padding: 3px; /* Поля вокруг текста */
+}
+
+ .nav ul li a{
+	 text-decoration: none;
+ }
+ .bread_crumbs a{
+	 text-decoration: none;
+ }
+
+/*body {
+	font: 90%/160% Arial, Helvetica, sans-serif;
+	color: #666;
+	width: 900px;
+	max-width: 96%;
+	margin: 0 auto;
+	background: #e0e6f0 url('/images/noise.png') repeat 0 0;
+}*/
+body {
+	background-color: #e0e6f0;
+	//width: 900px;
+}
+
+table input{
+
+    width: 30px; /*Определяем пиксельную ширину текстового поля с помощью CSS-свойств */
+
+   } 
+   
+.scrolling_list ul{
+	height:200px;
+	width:50%;
+	overflow:hidden;
+	overflow-y:scroll;
+}
+/* .scrolling_list li{
+	height:50px;
+} */
+/*  .cut-text { 
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  width: 150px; 
+  height: 1.2em; 
+  white-space: nowrap;
+}  */
+.cut-text {  
+  text-overflow: ellipsis;
+  /* width: 300px;  */
+  width:90%;
+  white-space: nowrap;
+  overflow: hidden;
+} 
+/* .cut-text p{
+	display: none;
+	content: " ";
+} */
+.cut-text br{
+	display: none;
+}
+ /* .cut-text p {display: none} */
+.cut-text p {
+    /* display: block !improtant; */
+    margin: 0px !important;
+    border: 0px !important;
+    padding: 0px !important;
+	display:inline;
+} 
+.edit_instruments_tegs {
+	font-weight: bolder;
+}
+
+/* .wrapper {
+  min-width: 150px;
+} */
+
+li.hidden_instrument {
+	background: gray;
+}
+
+li.admin_catalog {
+	list-style-type: none;
+	/* cursor: pointer; */
+}
