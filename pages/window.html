@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+  <head>
+    <script type="text/javascript" src="../scripts/jquery.js"></script>
+    <link rel="stylesheet"  type="text/css" href="../styles/windowstyle.css" />  
+	<script src="../scripts/jquery-ui/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../scripts/jquery-ui/jquery-ui.css">
+  </head>
+ 
+  <body>
+  <h1>Контент страницы</h1>
+  <div id="pop-up-window"><!--Окно-->
+    <div id="windowHeader"><!--Верхняя часть окна-->
+        <div id="windowTitle">Всплывающее окно jQuery</div><!--Заголовок окна-->
+        <img src="../images/window/window_close.jpg" id="btnClose" /><!--Кнопка закрыть-->
+    </div>
+
+    <div id="windowRightSide"><div id="windowLeftSide"></div></div><!--левая и правая часть окна-->
+    <div id="windowContent">
+		<p>
+			<img src="../images/window/baner.png"/> <br/> 
+			<a href="http://feedburner.google.com/fb/a/mailverify?uri=LifeExample" target="popupwindow">Подписывайся на статьи блога!</a>
+		</p>
+	</div><!--Содержимое высплявающего окна jQuery-->
+  </div>
+
+  <div id="showWindow">Показать всплывающее окно</div>
+  </body>
+	
+</html>
+
+<div id="draggable">Перемести меня</div>
+
+<script>
+
+$(document).ready(function(){
+	$("#draggable").draggable();
+    var pop_window = $('#pop-up-window');
+	pop_window.draggable();
+
+        pop_window.hide();
+
+    $('#showWindow').click(function(){
+        pop_window.show(1000);
+    });
+
+    $('#btnClose').click(function(){
+        pop_window.hide(1000);
+    });
+
+    });
+</script>	
+
+<!-- <style type="text/css">
+        #draggable {font-size: x-large; border: thin solid black;
+            width: 5em; text-align: center; padding:10px}
+</style>
+<script type="text/javascript">
+	$(function() {
+		
+		$('#draggable').draggable();
+		
+	});
+</script>  -->
